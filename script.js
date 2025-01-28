@@ -7,12 +7,12 @@ window.onload = function() {
     }, 200);
 };
 
-let content1Scroll;
-let content1ScrollSpan;
+// let content1Scroll;
+// let content1ScrollSpan;
 
-window.addEventListener("scroll", () => {
-    content1Scroll = content1.getBoundingClientRect().top;
-    content1ScrollSpan = Math.max(1, Math.min(3, 9 - Math.floor(content1Scroll / 100)))
-    console.log(content1Scroll);
-    content1.querySelectorAll("span")[content1ScrollSpan - 1].style.opacity = 1000 / content1Scroll;
-});
+// window.addEventListener("scroll", () => {
+//     content1Scroll = content1.getBoundingClientRect().top;
+//     content1ScrollSpan = Math.max(1, Math.min(3, 9 - Math.floor(content1Scroll / 100)))
+//     console.log(content1Scroll);
+//     content1.querySelectorAll("span")[content1ScrollSpan - 1].style.opacity = 1000 / content1Scroll;
+// });

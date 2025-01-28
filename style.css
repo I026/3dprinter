@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    background-color: rgb(130, 130, 130);
+    font-family: "Outfit","Noto Sans JP";
+}
+.tops{
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+.tops video{
+    object-fit: cover;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    opacity: 0;
+    animation: topTextFadeIn 1s ease-in-out forwards;
+}
+@media (max-width: 1000px) {
+    .tops video{
+        height: 100vw;
+    }
+}
+@keyframes topVideoFadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.tops .topTitle{
+    opacity: 0;
+    animation: topTextFadeIn 1s ease-in-out forwards;
+    animation-delay: 3s;
+    position: absolute;
+    top: 40vh;
+    right: 0;
+    font-size: 5em;
+    width: 95vw;
+    font-weight: normal;
+}
+@keyframes topTextFadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@media (max-width: 1000px) {
+    .tops video{
+        width: 120vw;
+    }
+    .tops .topTitle{
+        top: auto;
+        bottom: clamp(200px, 40vw, 400px);
+    }
+}
+.tops .topText{
+    opacity: 0;
+    animation: topTextFadeIn .5s ease-in-out forwards;
+    animation-delay: 4.4s;
+    position: absolute;
+    top: 3em;
+    font-size: .5em;
+}
+@keyframes topTitleOWidth{
+    0%{
+        width: 0;
+    }
+    45%{
+        width: 1em;
+    }
+    50%{
+        width: .5em;
+    }
+    100%{
+        width: .5em;
+    }
+}
+#topTitleO{
+    height: .5em;
+    width: 1em;
+    animation: topTitleOWidth 5s ease-in-out forwards;
+    animation-delay: 2s;
+    box-sizing: border-box;
+    display: inline-block;
+    border: 7.5px black solid;
+    border-radius: .5em;
+    background-color: transparent;
+}
+@keyframes topTitleNumberOpacity{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.topTitleNumber{
+    opacity: 0;
+    animation: topTitleNumberOpacity 1s ease-in-out forwards;
+    animation-delay: 0s;
+}
+.contents{
+    margin: 20px;
+    font-size: 2em;
+}
+@media (max-width: 1000px) {
+    .contents{
+        font-size: 1.2em;
+    }
+}
+.contents h1{
+    font-weight: 450;
+}
+.contents h1 span{
+    opacity: 0;
+}

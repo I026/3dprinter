@@ -11,7 +11,7 @@ body{
 }
 .tops video{
     object-fit: cover;
-    position: absolute;
+    position: relative;
     height: 100vh;
     width: 100vw;
     top: 0;
@@ -59,8 +59,7 @@ body{
         height: clamp(50vh, 60vh, 75vh);
     }
     .tops .topTitle{
-        top: auto;
-        bottom: 15vh;
+        top: clamp(48vh, 58vh, 73vh);
     }
 }
 .tops .topText{
